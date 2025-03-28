@@ -36,4 +36,4 @@ for (let i = 0; i < bicicles.length; i++) {
     console.log(bicicles[i].name + ' ' + 'è la bicicletta più leggera');
 }
 
-console.log(lightBike);
+console.log('la bicicletta più leggera è la '+' ' + lightBike.name + ' ' + 'con il peso di'+ ' ' + lightBike.weight + 'kg');
