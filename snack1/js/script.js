@@ -1,5 +1,5 @@
 //snack 1 
-
+//creo un array di oggetti con le biciclette
 const bicicles = [
     {
         name: 'bici rossa',
@@ -26,14 +26,13 @@ const bicicles = [
         weight: 15,
     },
 ]
-
+//creo una variabile per la bicicletta più leggera
 let lightBike = bicicles[0];
-
+// ciclo l'array per trovare la bicicletta più leggera
 for (let i = 0; i < bicicles.length; i++) {
     if (bicicles[i].weight < lightBike.weight) {
         lightBike = bicicles[i];
     }
-    console.log(bicicles[i].name + ' ' + 'è la bicicletta più leggera');
 }
-
+//stampo in console la bicicletta più leggera
 console.log('la bicicletta più leggera è la '+' ' + lightBike.name + ' ' + 'con il peso di'+ ' ' + lightBike.weight + 'kg');
