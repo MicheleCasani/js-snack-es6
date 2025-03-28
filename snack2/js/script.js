@@ -29,14 +29,14 @@ const footballTeams = [
     {
         name: 'giuventus',
         point: 0,
-        foul: 0 
+        foul: 0
     },
 ]
 
 //creo un ciclo per assegnare i punti e i falli a ciascuna squadra
-for(i=0; i<footballTeams.length; i++){
-    footballTeams[i].point = Math.floor(Math.random()*100)+ 1;
-    footballTeams[i].foul = Math.floor(Math.random()*100)+ 1;
+for (i = 0; i < footballTeams.length; i++) {
+    footballTeams[i].point = Math.floor(Math.random() * 100) + 1;
+    footballTeams[i].foul = Math.floor(Math.random() * 100) + 1;
 }
 console.log(footballTeams);
 
@@ -45,7 +45,10 @@ let footballTeamsNameFoul = [];
 
 //creo un nuovo ciclo per inserire i nomi e i falli delle squadre nell'array vuoto
 for (let i = 0; i < footballTeams.length; i++) {
-    footballTeamsNameFoul.push(footballTeams[i].name, footballTeams[i].foul)
+    footballTeamsNameFoul.push({
+       name: footballTeams[i].name,
+       foul: footballTeams[i].foul
+    });
 }
 //stampo in console l'array con i nomi e i falli delle squadre di calcio
 console.log(footballTeamsNameFoul);
